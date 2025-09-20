@@ -1,8 +1,9 @@
-from tkinter import filedialog
-from tkinter import VERTICAL, HORIZONTAL
+from src.tk_compat import filedialog, tk
 import numpy as np
 from PIL.Image import fromarray
-import tkinter as tk
+
+VERTICAL = getattr(tk, "VERTICAL", "vertical")
+HORIZONTAL = getattr(tk, "HORIZONTAL", "horizontal")
 
 
 def mix_image_with_bg(im, bg_color):
