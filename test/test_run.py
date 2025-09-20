@@ -1,3 +1,8 @@
+import pytest
+
+
+pytest.importorskip("numpy")
+
 from src.mainwindow import Application
 from src.textconfig import TextConfigureApp
 

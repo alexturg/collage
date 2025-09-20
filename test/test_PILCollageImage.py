@@ -1,10 +1,13 @@
+import os
+
+import pytest
+
+pytest.importorskip("numpy")
+
 from src.Collage import Collage
 from src.CollageImage import PILCollageImage
 from src.CornerCreator import CornerCreator
 from src.CollageImage import safe_open_image
-
-import pytest
-import os
 
 
 @pytest.fixture

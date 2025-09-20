@@ -1,3 +1,8 @@
+import pytest
+
+
+pytest.importorskip("numpy")
+
 from src.fonts import get_system_fonts
 
 
