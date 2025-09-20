@@ -49,6 +49,11 @@ Clone repository and in collage root directory execute:
  - python3 setup.py sdist bdist_wheel
  - pip3 install dist/collage-0.0.1-py3-none-any.whl
 
+## How to run
+
+- **Desktop (Tkinter)**: ``python run.py``
+- **Browser preview**: ``python run.py --browser`` — запускает облегчённый режим в браузере для быстрой проверки параметров коллажа. Дополнительно можно использовать ``--host`` и ``--port`` для указания адреса сервера и ``--no-browser-open`` чтобы не открывать окно браузера автоматически.
+
 # Documentation
 https://1alexandra.github.io/collage/
 
