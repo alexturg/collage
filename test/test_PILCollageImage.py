@@ -1,10 +1,7 @@
-import tkinter as tk
-
 from src.Collage import Collage
 from src.CollageImage import PILCollageImage
 from src.CornerCreator import CornerCreator
 from src.CollageImage import safe_open_image
-from src.scroll import ScrolledFrame
 
 import pytest
 import os
@@ -16,9 +13,12 @@ def filename():
 
 
 @pytest.fixture
-def collage():
-    collage = Collage(0, 1, 1, 1, None, [], {'width': 30, 'height': 30})
-    return collage
+def collage(tk_root):
+    collage = Collage(0, 1, 1, 1, None, [tk_root], {'width': 30, 'height': 30})
+    try:
+        yield collage
+    finally:
+        collage.destroy()
 
 
 @pytest.fixture
