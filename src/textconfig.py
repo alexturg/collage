@@ -1,5 +1,5 @@
-import tkinter as tk
-from tkinter.colorchooser import askcolor
+from src.tk_compat import colorchooser, tk
+askcolor = colorchooser.askcolor
 from datetime import datetime
 from src.fonts import get_system_fonts
 from src.grid import grid_frame

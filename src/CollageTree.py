@@ -1,10 +1,10 @@
-import tkinter as tk
+from src.tk_compat import tk
 from src.utils import ask_open_image, get_orient, is_up_left, int_clamp, is_vertical, mix_image_with_bg
 from src.CollageImage import safe_open_image
 from src.BaseTkTree import BaseTkTreeNode, BreedingTkNode, UpdatableTkNode
 from src.constants import HIGHLIGHT_BORDER_WIDTH
 from PIL import Image
-from PIL.ImageTk import PhotoImage
+from src.photoimage_compat import PhotoImage
 
 
 class CollageBreedingNode(BreedingTkNode):

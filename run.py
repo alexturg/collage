@@ -1,4 +1,4 @@
-import tkinter as tk
+from src.tk_compat import tk
 from src.mainwindow import Application
 
 if __name__ == "__main__":
