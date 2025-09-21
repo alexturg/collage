@@ -1,7 +1,7 @@
 from PIL import Image
 from src.utils import int_clamp
 from PIL import UnidentifiedImageError
-import tkinter.messagebox as messagebox
+from src.tk_compat import messagebox
 
 
 def safe_open_image(filename, corner_creator):

@@ -1,8 +1,6 @@
 import os
 import sys
-import tkinter as tk
-from tkinter import filedialog
-import tkinter.messagebox as messagebox
+from src.tk_compat import filedialog, messagebox, tk
 import gettext
 import locale
 
